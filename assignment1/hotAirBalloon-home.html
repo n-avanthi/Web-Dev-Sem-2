@@ -1,0 +1,164 @@
+<!-- Create an aesthetic (good looking) page with HTML, CSS of anything other than a person. 
+The page you create should be an Advertisement for any one of the above. It must include, apart from the content of the Ad: 
+An Image
+An Anchor Tag 
+A Table
+An Audio Clip 
+A Video Clip 
+A Nav Bar 
+A Footer (Having your name and mail ID as creator as well as Credits - Internet Sources you took the images, video and content from). Its important to include Credits. Else your whole assignment will be ungraded. 
+A Submit Button (OR) Menu Item that says -"Book Now". This must be linked to MKN_Assignment#2 Page.  -->
+
+<html>
+    <head>
+        <title>Hot Air Balloon | HOME</title>
+    </head>
+    <style>
+        .page
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f5ffc9;
+            justify-content: justify;
+            font-size: 125%;
+            color: #191825;
+        }
+        .side-by-side li
+        {
+            width: 100%;
+            font-size: 120%;
+            display: inline;
+        }
+        nav 
+        {
+            background-color: #191825;
+            overflow: hidden;
+        }
+        nav a 
+        {
+            float: left;
+            display: block;
+            color: #f5ffc9;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+        }
+        nav a:hover 
+        {
+            background-color: #f5ffc9e8;
+            color: #191825;
+        }
+        .button
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: none;
+            padding: 9px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            color: #f5ffc9;
+            background-color: #26243a;
+        }
+        table
+        {
+            width: 50%;
+            text-align: center;
+            font-size: 20px;
+            color:#191825;
+        }
+
+    </style>
+    <body class = "page">
+        <div>
+            <div class="side-by-side">
+                <nav>
+                    <ul>
+                        <li><a href = "#About Us">About Us</a></li>
+                        <li><a href = "#Prices">Prices</a></li>
+                        <li><input type = "button" class = "button" value = "BOOK NOW" onclick = "redirect()"></li>
+                        <li><a href = "#Gallery">Gallery</a></li>
+                        <li><a href = "#Reviews">Reviews</a></li>
+                        <li><a href = "#Contact Us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img width = "1503px" height = "600px" alt = "Hot Air Balloon Image" src = "https://idsb.tmgrup.com.tr/ly/uploads/images/2022/07/12/thumbs/800x531/217928.jpg?v=1657628294"/>
+            <h1 style = "text-align: center;">India's Best Hot Air Balloon Experience is here!</h1>
+            <p style = "text-align: center;">Hot air balloons are a man-made wonder – simply hop into these floating baskets, get a bird's eye view of the world and get amazed by nature's glory.</p>
+            <hr>
+
+            <div id = "About Us">
+                <h3><b>ABOUT US</b></h3>
+                <p>We are authorized by the Directorate General of Civil Aviation (DGCA), Ministry of Civil Aviation to do hot air ballooning in India on a commercial basis. All our pilots have thousands of hours of flying experience; our team comprises internationally licensed Balloon Pilots from Europe, USA, Australia & India. We adhere to all maintenance and security guidelines laid down by Civil Aviation Authorities of India. Our balloons are sourced from the best manufactures in the world.</p>
+                <p>Fly like a bird with the Bangalore hot air balloon ride and see the sun coming up. Start your day with this amazing experience that you will never forget for the rest of your life.</p>
+                <p>Enjoy a bird's eye view of the city and fly up to 250 feet above the ground for 10 minutes. Starting anytime between 5:30 AM - 7:30 AM. The hot air balloon in Bangalore activity is taken care of in the presence of trained and experienced guides who have all the safety measures in place during the flight. </p> 
+                <p>A flight can take a maximum of 7 people at a time. Feel your adrenaline pumping through your veins while you experience unparalleled pleasures of your life.</p>
+                <br>
+            </div>
+
+            <div id = "Prices">
+                <h3><b>PRICES</b></h3>
+                <table border = 1>
+                    <tr>
+                        <th>Package</th>
+                        <th>Duration</th>
+                        <th>Price per head</th>
+                    </tr>
+                    <tr>
+                        <td>Basic</td>
+                        <td>15 minutes</td>
+                        <td>600/-</td>
+                    </tr>
+                    <tr>
+                        <td>Delux</td>
+                        <td>30 minutes</td>
+                        <td>1200/-</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>1 hour</td>
+                        <td>1800/-</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            
+            <div id = "Gallery">
+                <h3><b>GALLERY</b></h3>
+                <iframe width="956" height="538" src="https://www.youtube.com/embed/QGAMTlI6XxY" title="Colorful Time-Lapse of Hot Air Balloons in New Mexico | Short Film Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    
+             <div id = "Reviews">
+                <h3><b>REVIEWS</b></h3>
+                <p>Here are some of our customer reviews: </p>
+                <audio controls>
+                    <source src="review-1.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls>
+                    <source src="review-2.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls>
+                    <source src="review-3.mp3" type="audio/mpeg">
+                </audio>
+                <p>Please feel free to share your experience with us :)</p>
+             </div>   
+            
+             <hr>
+             <div id = "Contact Us">
+                <h3 style = "text-align: center;"><b>CONTACT US</b></h3>
+                <p style = "text-align: center;">If you have any questions or enquiries please call our Reservations Team on <b>+91 9999742000</b>. Please feel free to contact us. We are happy to answer any question you may have.</p>
+             </div>
+            
+             <footer>
+                <p style = "text-align: center;">Created by Avanthi Narasingu | Contact: avanthi.btech22@rvu.edu.in</p>
+                <p style = "text-align: center;">Credits: <a href = "https://www.dailysabah.com/life/hot-air-balloon-festival-kicks-off-in-turkeys-famed-cappadocia/news">Image</a>, <a href = "https://youtu.be/QGAMTlI6XxY">Video</a>, <a href = "https://ttsmp3.com/">Audio</a></p>
+              </footer>
+        </div>
+    </body>
+    <script>
+        function redirect()
+        {
+            window.open("hotAirBalloon-form.html", "_blank"); 
+        }
+    </script>
+</html>

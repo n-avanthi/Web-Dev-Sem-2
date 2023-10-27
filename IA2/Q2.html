@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoms Bakery</title>
+    <script src="Q2.js"></script></head>
+    <link rel = "stylesheet" href = "Q2.css"> 
+</head>
+
+<body>
+    <div class="main">
+        <div class="navContainer">
+            <nav>
+                <ul>
+                    <li><a href = "#Home">Home</a></li>
+                    <li><a href = "#Menu">Menu</a></li>
+                    <li><a href = "#Prices">Prices</a></li>
+                    <li><a href = "#Order Now">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img width = "500px", src = ""/>
+        <h1>THOMS BAKERY</h1>
+        <div id = "Home">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque, quod consequatur blanditiis assumenda sunt sapiente alias labore non laudantium odit minima quia explicabo praesentium fuga veniam omnis aspernatur earum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi consequatur provident vel dolore, modi sit obcaecati numquam, molestiae porro quaerat velit. Nesciunt inventore qui natus distinctio omnis voluptatibus ex fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore explicabo corrupti doloremque nobis veritatis recusandae adipisci amet aliquid voluptatem minus, exercitationem repudiandae eveniet in culpa porro. Quos, dicta quia!</p>
+        </div>
+
+        <form id="myForm" class = "myForm">
+            <h2>FILL THE FORM FOR OFFERS!</h2>
+            <label>Enter name</label>
+            <input type="text" id="myName" class="form-control" placeholder="Enter your Username..."><br><br>
+            <label>Enter email</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email.."><br><br>
+            <label>Enter age</label>
+            <input type = "number" name = "age" id = "age" class = "age" placeholder ="Enter your age..."><br><br>
+            <label>Enter your gender</label>
+            <input type="radio" name="myRadio" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="myRadio" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="myRadio" id="other" value="other">
+            <label for="other">Other</label><br><br>
+            <select name="package" id="package">
+                <option value="">Choose your package from the dropdown</option>
+                <option value="1">Basic</option>
+                <option value="2">Delux</option>
+                <option value="3">Luxury</option>
+            </select><br><br>
+            <label>Select items</label>
+            <input type="checkbox" name="check1" id="cookie" value="cookie">
+            <label for="cookie">cookie</label>
+            <input type="checkbox" name="check2" id="cake" value="cake">
+            <label for="cake">cake</label>
+            <input type="checkbox" name="check3" id="juice" value="juice">
+            <label for="juice">juice</label><br><br>
+            <button type="button" onclick = "formSubmit()">Submit</button>
+        </form>
+
+        <div class="details">
+            <h3 id="confirm"></h3>
+            <p id="urname"></p><br>
+            <p id="urage"></p><br>
+            <p id="uremail"></p><br>
+            <p id="urpackage"></p>
+            <p id = "mydisplay" style = "color: brown;"></p> 
+        </div>
+        <br><br>
+        <footer>
+            <p style = "text-align: center;">Created by Avanthi Narasingu | Contact: avanthi.btech22@rvu.edu.in</p>
+            <p style = "text-align: center;">Credits: <a href = "https://www.dailysabah.com/life/hot-air-balloon-festival-kicks-off-in-turkeys-famed-cappadocia/news">Image</a>, <a href = "https://youtu.be/QGAMTlI6XxY">Video</a>, <a href = "https://ttsmp3.com/">Audio</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

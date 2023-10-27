@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<script>
+    function validate(shoeForm){
+        event.preventDefault(); 
+
+        var myName = document.getElementById("myName").value;
+        if(myName.length <= 1){
+            document.getElementById("errorname").innerHTML = "Invalid name entered";
+        }
+    }
+</script>
+<body>
+    <header class="home" id="home">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#shoeForm">Shop Now</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="header_text">
+            <p class="banner_title">Sneaker Kicks</p>
+            <p class="banner_subtitle">One stop Sneaker destination</p>
+        </div>
+        <img class="banner_img" width="100%" src="https://images.unsplash.com/photo-1582482020958-b838acfd9b66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZSUyMHN0b3JlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+    </header>
+    <div class="container">
+        <div class="content">
+            <div id="about" class="about">
+                <h3>About Us</h3>
+                <p>Sneaker Kicks is a 100% homegrown sneaker design house geared to combine high fashion design, superior quality, and affordability. The brand has been conceptualized to fill the growing need for a truly homegrown product that puts India on the map for the rapidly growing sneaker culture across the globe. 
+                    A product for the whole world, designed and manufactured in India.<br> 
+                    Our passion for combining high fashion and sneakers has been the driving force behind creating products with a design-led twist to break the boundaries of the conventional.
+                    We have teamed up with one of India’s leading manufacturers of international footwear brands. Their 65 years of manufacturing experience lend their expertise to helping us attain a high-quality product. <br>
+                    India continues to be the second largest manufacturer of footwear in the world, and we believe it is time for a homegrown product to feature in the global sneaker market. 
+                </p>
+            </div><br>
+            <iframe width="90%" height="300" src="https://www.youtube.com/embed/lYCUXlQXgaQ" title="Unboxing One Of The RAREST Kobe Sneakers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6bO6qcMQ5YExLPqoNXeFLW?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+        <div class="shoeForm"><br><br>
+            <form name="shoeForm" id="shoeForm" action="#" onsubmit="validate(this)">
+                <h3>Shop now</h3><br>
+        
+                <label for="myName">Name :</label>
+                <input type="text" id="myName" name="myName" placeholder="Enter full name"><br>
+                <p style="color: red;" id="errorname"></p>
+                <br>
+
+                <label for="qty">Quantity :</label>
+                <input type="number" id="qty" value="1"> 
+                <br>
+                
+                <label for="items">Type :</label>
+                <select id="items">
+                    <option value=""></option>
+                    <option value="Low Top">Low Top</option>
+                    <option value="High Top">High Top</option>
+                    <option value="Chunky">Chunky</option>
+                </select>
+                <br>
+        
+                <label for="gender">Gender :</label><br>
+                    <input type="radio" id="men" name="gender" value="Men">
+                    <label>Men</label>
+                    <input type="radio" id="women" name="gender" value="Women">
+                    <label>Women</label>
+                <br>
+
+                <label for="brand">Brand :</label>
+                <input type="checkbox" id="airforce" name="brand" value="airforce">
+                <label for="Airforce">NIKE AIR FORCE 1</label>
+                <input type="checkbox" id="airjordan" name="brand" value="airjordan">
+                <label for="airjordan">NIKE AIR JORDAN</label>
+                <input type="checkbox" id="adidas" name="brand" value="adidas">
+                <label for="adidas">ADIDAS ORIGINALS</label>
+
+                <br>
+                <button type="button" onclick="popup()">BUY NOW</button><br>
+
+                <p id="confirm"></p>
+            </form>	
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <footer>
+            <p style="text-align:center">Created on 22-06-2023</p>
+            <p style="text-align:center">Created by Avanthi Narasingu</p>
+            <p style="text-align:center">Credits: 
+                <a href="https://7-10.in/pages/about-us">Content from 7-10</a> | 
+                <a href="https://unsplash.com/photos/NccnOipBack">Photos from Unsplash</a> | 
+                <a href="https://www.youtube.com/watch?v=lYCUXlQXgaQ">Video from Youtube</a> | 
+                <a href="https://open.spotify.com/show/6BRApFKpxPwr6ob0TzhN6e">Audio from Spotify</a> | 
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

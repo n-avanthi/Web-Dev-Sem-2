@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Bakery</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <header class="home" id="home">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#bakeryForm">Shop Now</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <img class="banner_img" src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <div class="header_text">
+                <p class="banner_title">Fatima Bakery</p>
+                <p class="banner_subtitle">Your Sweet Escape</p>
+            </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div id="about" class="about">
+                <h3>About Us</h3>
+                <p>The story of the world's most famous bakery begins in 1996 on a quaint, cobblestone corner in the West Village where Magnolia Bakery opened its doors for the first time. The sweet smell of cakes and cookies and pies and pudding tumbled out, wafting down the streets, beckoning all in.<br>
+                    Our red velvet cupcakes became iconic and people lined up around the block for our banana pudding. There was even talk of New York pretzel guys becoming cupcake guys. Magnolia Bakery was a destination for locals and tourists alike.<br>
+                    It was time for us to open the cupboards and share our magic with the world. Our neighborhood bakery found its way into new neighborhoods near and far, we wrote cookbooks and helped people all over celebrate their most important moments.<br>
+                    And while we have grown, a few things will always remain: open early and close late, a dollop of buttercream makes everything better, and our mission: make today sweeter than yesterday. 
+                </p>
+            </div>
+            <iframe width="75%" height="40%" src="https://www.youtube.com/embed/XOA5FLzUAzA" title="10-minute break | Dessert-making Vlog☕️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1WetP8o4SabSsblbswGP08?utm_source=generator" width="75%" height="30%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    
+        <div class="booking_form">
+            <form name="form1" id="bakeryForm" action="#">
+                <h3>Book now</h3><br>
+        
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name">
+                <br>
+                
+                <label for="items">Type :</label>
+                <select id="items">
+                    <option value="Chocolate Cake">Chocolate Cake</option>
+                    <option value="Croissant">Croissant</option>
+                    <option value="Assorted Cookies">Assorted Cookies</option>
+                    <option value="Banana Pudding">Banana Pudding</option>
+                </select>
+                <br>
+    
+                <label for="qty">Quantity :</label>
+                <input type="number" id="qty" value="1"> 
+                <br>
+        
+                <label for="diet">Diet :</label>
+                    <label>Vegetarian</label>
+                    <input type="radio" id="veg" name="diet" value="veg">
+                    <label>Non Vegetarian</label>
+                    <input type="radio" id="nonveg" name="diet" value="nonveg">
+                <br>
+
+                <label for="allergies">Allergies :</label>
+                <input type="checkbox" id="Lactose" name="allergies" value="Lactose">
+                <label for="Lactose">Lactose Intolerance</label><br>
+                <input type="checkbox" id="Peanuts" name="allergies" value="Peanuts">
+                <label for="Peanuts">Peanuts</label><br>
+                <input type="checkbox" id="Walnuts" name="allergies" value="Walnuts">
+                <label for="Walnuts">Walnuts</label><br>
+                <input type="checkbox" id="Eggs" name="allergies" value="Eggs">
+                <label for="Eggs">Eggs</label><br>
+    
+                <button type="button" onclick="popup()">Submit</button>
+
+                <p id="text01"></p>
+            </form>	
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <footer>
+            <p style="text-align:center">Created on 21-06-2023</p>
+            <p style="text-align:center">Credits:
+                <a href="https://www.magnoliabakery.com/pages/our-story">Content from Magnolia Bakery</a> |
+                <a href="https://www.pexels.com/photo/donuts-and-bagel-display-205961/">Photos from Pexels</a> |
+                <a href="https://www.pexels.com/video/assorted-breads-3119255/">Video from Pexels</a> |
+                <a href="https://open.spotify.com/episode/1WetP8o4SabSsblbswGP08">Audio from Spotify</a> |
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

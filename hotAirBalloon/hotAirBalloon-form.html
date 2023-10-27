@@ -1,0 +1,253 @@
+<html>
+    <head>
+        <title>Hot Air Balloon | BOOK NOW</title>
+        <script>
+            function validateEmail(email) 
+            {
+                const re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+
+            function validatePackage()
+            {
+                var e = document.getElementById("package");
+                var strPackageVal = e.options[e.selectedIndex].value;
+
+                var strPackageTxt = e.options[e.selectedIndex].text;
+                if(strPackageVal==0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+                
+            }
+            function validate(theForm)
+            {
+                event.preventDefault(); // prevent form submission
+
+                var name = document.f1.name.value;
+                var age = document.f1.age.value;
+                var email = document.f1.email.value;
+                var phone = document.f1.phone.value;
+                var package = document.f1.package.value;
+                var members = document.f1.members.value;
+                var reg = "^[a-zA-Z]+[\-'\s]?[a-zA-Z ]+$";
+                var status = false;
+
+                if(name.length <= 1)
+                {
+                    document.getElementById("errorname").innerHTML = "Invalid name entered";
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }
+
+                if(age < 4 || age > 110 || age == "")
+                {
+                    document.getElementById("errorage").innerHTML = "Invalid age entered";
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }
+
+                const emailinput = email;
+                if(validateEmail(emailinput))
+                {
+                    status = true;
+                }
+                else
+                {
+                    document.getElementById("erroremail").innerHTML = "Invalid email ID entered";
+                    status = false;
+                }
+
+                if(phone.length > 10 || phone.length < 10 || phone == "")
+                {
+                    document.getElementById("errorphone").innerHTML = "Invalid phone number entered";
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }
+
+                if(validatePackage() == false)
+                {
+                    document.getElementById("errorpackage").innerHTML = "Package not chosen";
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }
+
+                if(members <= 0 || members > 7 || members == "")
+                {
+                    document.getElementById("errormembers").innerHTML = "Invalid number of members entered";
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }    
+
+                if(status)
+                {
+                    window.location.href = "hotAirBalloon-confirm.html";
+                }
+
+                return status;
+            }
+        </script>
+    </head>
+    <style>
+        .page
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f5ffc9;
+            justify-content: justify;
+            font-size: 115%;
+            color: #191825;
+        }
+
+        .button
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: none;
+            padding: 9px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            color: #f5ffc9;
+            background-color: #242235;
+            align-items: center;
+        }
+
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /*box, box shadow*/
+        }
+        .form
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <body class = "page">
+        <div class = "container">
+            <form name = "f1" class = "form" id = "form" action = "#" onsubmit = "return validate(this)">
+                <table>
+                    <h3 style = "align-items: center;"><b>Are you ready for the experience of a lifetime? Book Now!!</b></h3>
+                    <tr>
+                        <td><b>Enter your Name: </b></td>
+                        <td>
+                            <input type = "text" name = "name" id = "name" class = "name">
+                            <br>
+                            <span style="color: red;" id="errorname"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Enter your Age (must be above 5yrs): <b></td>
+                        <td>
+                            <input type = "number" name = "age" id = "age" class = "age">
+                            <br>
+                            <span style="color: red;" id="errorage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Enter your Email ID: </b></td>
+                        <td>
+                            <input type = "email" name = "email" id = "email" class = "email">
+                            <br>
+                            <span style="color: red;" id="erroremail"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Enter your phone number: </b></td>
+                        <td>
+                            <input type = "number" name = "phone" id = "phone" class = "phone">
+                            <br>
+                            <span style="color: red;" id="errorphone"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Select your Gender:</b></td>
+                        <td>
+                            <input type="radio" name="radio1" id="male" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" name="radio2" id="female" value="female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" name="radio3" id="other" value="other">
+                            <label for="other">Other</label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Enter number of members (upto 7 people): </b></td>
+                        <td>
+                            <input type = "number" name = "members" id = "members" class = "members">
+                            <br>
+                            <span style="color: red;" id="errormembers"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Select your Package:</b></td>
+                        <td>
+                            <select name="package" id="package">
+                                    <option value="">Choose your package from the dropdown</option>
+                                    <option value="1">Basic</option>
+                                    <option value="2">Delux</option>
+                                    <option value="3">Luxury</option>
+                                </select>
+                            <br>
+                            <span style="color: red;" id="errorpackage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Also include:</b></td>
+                        <td>
+                            <input type = "checkbox" name="check1" id="snacks" value="snacks">
+                            <label for = "Snacks">Snacks</label>
+                            <input type = "checkbox" name="check2" id="drinks" value="drinks">
+                            <label for = "Drinks">Drinks</label><br>
+                            <input type = "checkbox" name="check3" id="photo" value="photo">
+                            <label for = "photo">Capture your ride(photo)</label>
+                            <input type = "checkbox" name="check4" id="video" value="video">
+                            <label for = "video">Capture your ride(video)</label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>What your expectations from this adventure?</b></td>
+                        <td><textarea rows = "10" cols = "56" name = "expectations"></textarea></td>
+                        <br>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="CONFIRM BOOKING" class = "button"/></td>  
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <hr>
+        <div id = "Contact Us">
+            <h3 style = "text-align: center;"><b>CONTACT US</b></h3>
+            <p style = "text-align: center;">If you have any questions or enquiries please call our Reservations Team on <b>+91 9999742000</b>. Please feel free to contact us. We are happy to answer any question you may have.</p>
+        </div>
+        <footer>
+            <p style = "text-align: center;">Created by Avanthi Narasingu | Contact: avanthi.btech22@rvu.edu.in</p>
+        </footer>
+    </body>

@@ -1,0 +1,45 @@
+.navContainer li {
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+
+.navContainer nav {
+    background-color: #191825;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6%;
+}
+
+.navContainer nav a {
+    color: antiquewhite;
+}
+
+.sidebar{
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    top:0;
+    left:0;
+    background-color: #393737; 
+    padding-top: 20px;
+}
+
+.sidebar nav a {
+    display:block;
+    color: antiquewhite;
+}
+
+.main{
+    margin-left:160px;
+}
+
+.details{
+    background-color: #373739;
+    color:rgb(240, 248, 255);
+}
+
+footer{
+    background-color: rgb(174, 174, 174);
+}

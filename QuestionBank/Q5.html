@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<style>
+    .sections
+    {
+        display:flex;
+        justify-content: space-evenly;
+        background-color: rgb(226, 220, 220);
+    }
+    .img
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .contact
+    {
+        margin-left: 8px;
+    }
+    .academics
+    {
+        margin-left: 15px;
+    }
+    .apply
+    {
+        margin-left: 15px;
+    }
+    .button
+    {
+        border: none;
+        background-color: rgb(23, 23, 114);
+        color:beige;
+        padding: 5px;
+        font-size: 13px;
+        margin-right: 5px;
+    }
+</style>
+<body>
+    <footer>
+        <div class="sections">
+            <div class="img">
+                <img width = "200px" src = "data:image/jpeg;base64,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"/>
+            </div>
+            <div class="contact">
+                <p>Contact</p>
+                <p>For general enquiry: enquiry@rvu.edu.in</p>                    
+                <p>Phone: +91 95136 73778</p>                     
+                <p>For admissions: admissions@rvu.edu.in</p>   
+                <p>Phone: +91 89511 79896</p>      
+                <p>Location: RV Vidyanikethan Post Mile , Mysuru Road, Bengaluru - 560 059</p></p>    
+            </div>
+            <div class="academics">
+                <p>Academics</p>
+                <p>Undergraduate Programmes</p>                    
+                <p>Postgraduate Programmes</p>                     
+                <p>PhD</p>      
+            </div>
+            <div class="apply">
+                <div class="phone">
+                    <p class="phonetext"><img class="phoneimg" width = "10px" src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAMAAABmmnOVAAAAY1BMVEX///8AAAD7+/vx8fH09PRBQUHl5eXIyMiampoqKipGRkbu7u6SkpLZ2dmGhoZra2sVFRU0NDSwsLAPDw/Q0NBjY2PCwsLf399NTU19fX0bGxu6uro5OTlUVFR2dnanp6cjIyOLqB82AAADRUlEQVR4nO2b63aqMBBGTQREQSogXqoo7/+U9VKr4EySmuSz65zs/y73islkLnE0CgQCgX+BZHfM88n7vl9O0lZcSd+kMC+m4s571qIQPfZvUIhiMeCId9gMHYSI0BIfzw7wvXkkHMQigzqsKQchPpAOsqElxBIoUTEOosU5RFNOAhixUtZBbCRKgncQogI5kMfzRomJWHKmkhA5RGKudBAiQUgUGokDwEESN1cfQMSa1zqJ2di7xErnIEThXUIRqX7wHjepRGJI51tCHSW+8R039yYSvhOL0kSi9XyPGa2E7/PxlOlT+I4UXGb3iPeYmesddr4dRrs/4KC9ySEZd6SOVi0knVDH7S2oHlVtClg1mrEKNbBPwkWKGlkEcik/0oErflZQB/p8NFgHOs30n1j2iaicAtogOUPVPx0mVN4h7w9020y2hMTCf83Thyw+tmCJiJIARysuVMB6RVfoihSQU/UgM/8peG/SrUzw3szoSmyNtaAv9Bi7N5m2LqZ59wOT24CDBb0Un9gfhOleIVqIDzAVCKq9fSVhuonYbcHUQTU2v6HyihN76ObkfhBs6s0Vpti0l+v5Qw+q5Bpp0DokYSSwa8G2/Q2yvWWaOgoqbN9/o0m05OWTjZsc5MBZTOdGn3Nz/fO9NNXDjnuki9WyZmS8RcF10uTj+tWFgxR53bEWG+YiGXSGpw7KBeZBxQXyan/O1mP7Vs9SYdE+/+RkXd9Ybw1Ve3MxbBtEzNRka7s1lLPKWb/Fyc8rUsssQD0xbR42KBtYTtSVnQb7yuXCIr2dVs20fWO3QzWzkHJl4iBsRwWqM3KmSyc7o0me1RO6yafJV/i2WDqysHvTmPDvn35DaSUxGmtfeZgQ20mMIpOHBTrsiwaD2akOB/1h/fBUh4vpydxopM6zcJJ4RkyZaoirN3zqm0SDs15kYnFW3Q035cunpHPZGl6/uBiOC9nK6A3OENcT9yzXvpN7wkPrba3K5ij8vMf/3Wp4m5pkR6OXaidirw3IidGvYl156JCV7n2U32W4kaWKyBFblhzmRMuCTkPLCvr/ELnKhyGs3r7jL0PZrmhmlyUp20PqolPzGnKcnMng/9IJBAKBQCAQ+K/5AsDBI77zZ4FLAAAAAElFTkSuQmCC"/><a href = ""> Contact Us</a></p>
+                </div>
+                <input type = "button" class = "button" value = "APPLY NOW">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

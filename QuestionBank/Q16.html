@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+<style>
+    h2
+    {
+        border:solid;
+        color: green;
+        border-color: red;
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        text-align: center;
+    }
+    .form
+    {
+        color:brown;
+    }
+    .name
+    {
+        border-radius: 10px;
+    }
+    .password
+    {
+        border-radius: 10px;
+    }
+    .signup
+    {
+        color:palevioletred;
+    }
+    .button
+    {
+        padding : 10px;
+        color: blue;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .login{
+
+        color: maroon;
+        width: 300px;
+        position: absolute; 
+        top: 10%;
+        right: 50px;
+        font-size: 20px;
+        line-height: 20px;
+        /*This is the changed line*/
+        border-radius: 30px;
+        border: 5px solid black; }
+</style>
+<body>
+    <div class = "login">
+        <div class = "box">
+            <h2>Log In</h2>
+        </div>
+        <div class ="form">
+            <label for="u_name">Username: </label><br>
+            <input type="text" name="u_name" placeholder="Enter username" class = "name"><br>
+            <label for="u_pswd">Password: </label><br>
+            <input type="password" name="u_pswd" placeholder="Enter password" class = "password"><br>
+        </div>
+        <a href="Sign Up.html" class = "signup">No Account?? | Sign Up</a><br>
+        <button type="submit" class = "button">Log in</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script>
+        function operation()
+        {
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            var op = document.getElementById("select").value;
+            var sum = "";
+            if(op == "+")
+            {
+                sum = n1 + n2; 
+            }
+            else if(op == "-")
+            {
+                sum = n1 - n2;
+            }
+            else if(op == "^")
+            {
+                sum = 1;
+                for(let i = 0; i < n2; i++)
+                {
+                    sum *= n1;
+                }
+            }
+            else
+            {
+                sum  = "invalid";
+            }
+            document.getElementById("disp").innerHTML = "Answer is: " + sum;
+        }
+    </script>
+</head>
+<body>
+    <label>Enter first number: </label>
+    <input type = "text" id = "n1" placeholder="First number"><br><br>
+    <label>Enter second number: </label>
+    <input type = "text" id = "n2" placeholder="Second number"><br><br>
+    <label>Select operation: </label>
+    <select id = "select">
+        <option id = "+">+</option>
+        <option id = "-">-</option>
+        <option id = "^">^</option>
+    </select><br><br>
+    <input type = "button" id = "button" value = "Perform operation" onClick="operation()"><br><br>
+    <p id = "disp"></p>
+</body>
+</html>

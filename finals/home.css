@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+nav a {
+    float: left;
+    display: flex;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:brown;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: rgb(67, 52, 45);
+    color: wheat;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+.header_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.banner_title {
+    background-color: rgba(227, 61, 39, 0.702);
+    border-radius: 10px;
+    font-size: 6em;
+    padding: 10px;
+    color: white;
+}
+
+.banner_subtitle {
+    color: white;
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content  {
+    width: 50%;
+}
+
+.booking_form  {
+    padding-top: 20px;
+    width: 50%;
+}
+
+.about {
+    margin: 10px;
+}
+
+.about h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgb(88, 62, 29);
+}
+
+button {
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.826);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(162, 109, 40, 0.501);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: burlywood;
+    color: brown;
+    padding: 10px;
+}
+
+footer a {
+    color: brown;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

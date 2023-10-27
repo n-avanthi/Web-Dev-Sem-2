@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Prize winners | Form</title>
+    <link rel = "stylesheet" href = "formPage.css"> 
+    <script src = "formPage.js"></script>
+</head>
+<body>
+    <div class="navContainer">
+        <nav>
+            <ul>
+                <li><a href = "#Home">Home</a></li>
+                <li><a href = "#Form">Form</a></li>
+                <li><a href = "#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- header -->
+    <h2 style = "text-align: center;" class="pageHeader">NOBEL PRIZE WINNERS</h2> <!-- inline css -->
+
+    <!-- feature image -->
+    <img width = "100%" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfo8bLGLX93WT557T1wZ7yIYWKPPKEHO6yQg&usqp=CAU"/>
+
+    <!-- website content -->
+    <div class="home" id="Home">
+        <p>A nomination for the Nobel Peace Prize may be submitted by any person who meets the nomination criteria. A letter of invitation to submit is not required. The names of the nominees and other information about the nominations cannot be revealed until 50 years later. There are 305 candidates for the Nobel Peace Prize for 2023 out of which 212 are individuals and 93 are organizations. 305 candidates are less than last year (343) and the lowest number of candidates since 2019. For eight years in a row the number of candidates has been exceeding 300. The current record of 376 candidates was reached in 2016. Neither the names of nominators nor of nominees for the Nobel Peace Prize may be divulged until 50 years have elapsed.</p>
+    </div>
+
+    <!-- form filling -->
+    <form id = "myForm" class="myForm">
+        <h2 style = "text-align: center;">FILL THE FORM TO APPLY NOW!</h2>
+            <label>Enter name</label>
+            <input type="text" id="myName" class="form-control" placeholder="Enter your Username..."><br><br>
+            <label>Enter age</label>
+            <input type = "number" name = "age" id = "age" class = "age" placeholder ="Enter your age..."><br><br>
+            <label>Enter phone number</label>
+            <input type = "number" name = "phone" id = "phone" class = "phone" placeholder ="Enter your phone..."><br><br>
+            <label>Enter your gender</label>
+            <input type="radio" name="myRadio" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="myRadio" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="myRadio" id="other" value="other">
+            <label for="other">Other</label><br><br>
+            <button type="button" onclick = "formSubmit()">Submit</button>
+    </form>
+    
+    <!-- displaying data in its raw captured mode -->
+    <div class="display">
+        <h3 id="displayHeader"></h3>
+        <p id="confirm"></p>
+        <p id="applyName"></p>
+        <p id="applyAge"></p>
+        <p id="applyPhone"></p>
+    </div>
+    
+    <br><br>
+    <div class="contact" id="Contact">
+        <p style = "text-align: center;">For more information, contact +9129347378372 or email nobelPrize@gmail.com</p>
+    </div>
+    <br><br>
+    <!-- footer -->
+    <footer class="myFooter">
+        <p style = "text-align: center;">Created by Avanthi Narasingu.</p>
+        <p style = "text-align: center;">Date: 30/05/2023</p>
+        <p style = "text-align: center;">Contact: avanthi.btech22@rvu.edu.in</p>
+        <p style = "text-align: center;">Sources: <a href = "https://www.nobelprize.org/nomination/peace/">Content, </a><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfo8bLGLX93WT557T1wZ7yIYWKPPKEHO6yQg&usqp=CAU">Image</a></p>
+    </footer>
+</body>
+</html>
